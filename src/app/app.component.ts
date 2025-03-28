@@ -17,6 +17,12 @@ export class AppComponent {
       .getPropertyValue('--ion-toolbar-background')
       .trim();
 
+    if (!toolbarColor || toolbarColor === '') {
+      toolbarColor = window.matchMedia('(prefers-color-scheme: dark)').matches
+        ? '#000000'
+        : '#ffffff';
+    }
+
     StatusBar.setOverlaysWebView({ overlay: false });
     StatusBar.setBackgroundColor({
       color: toolbarColor
