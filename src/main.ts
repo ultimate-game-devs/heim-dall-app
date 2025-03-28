@@ -11,7 +11,7 @@ export const MQTT_SERVICE_OPTIONS: IMqttServiceOptions = {
   hostname: '192.168.178.100',
   port: 9001,
   path: '/mqtt',
-  protocol: "ws"
+  protocol: "wss"
 }
 
 bootstrapApplication(AppComponent, {
