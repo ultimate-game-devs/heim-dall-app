@@ -12,6 +12,11 @@ export const routes: Routes = [
           import('./outside/outside.page').then((m) => m.OutsidePage),
       },
       {
+        path: 'inside',
+        loadComponent: () =>
+          import('./inside/inside.page').then((m) => m.InsidePage),
+      },
+      {
         path: '',
         redirectTo: '/tabs/inside',
         pathMatch: 'full',
