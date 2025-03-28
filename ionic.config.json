@@ -1,0 +1,7 @@
+{
+  "name": "heim-dall",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
